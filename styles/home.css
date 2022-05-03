@@ -1,1 +1,6 @@
 /* add home page styles here */
+input {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}

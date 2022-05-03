@@ -6,3 +6,5 @@
   // get user input
   // use user input to update state 
   // update DOM to reflect the new state
+const ingredients1 = document.getElementById('food');
+const measurements1 = document.getElementById('units');
