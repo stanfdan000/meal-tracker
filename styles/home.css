@@ -1,6 +1,28 @@
 /* add home page styles here */
-input {
+#form {
     display: flex;
     flex-direction: row;
-    margin-top: 50px;
+    justify-content: space-between;
+    padding: 5px;
 }
+
+.ingredients {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    width: 50%;
+}
+
+.listOfIngredients {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+}
+

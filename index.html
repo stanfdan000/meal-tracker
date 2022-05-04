@@ -24,23 +24,34 @@
             <h2>
                 Welcome to Track you're meal!
             </h2>
-        </section>
-        <section>
             <h3>Add you're ingredients</h3>
-            <form id="ingredientsList">
+            <div class="ingredients">
+            <form id="addIngredientsList">
                 <label> 
-                    ingredients:<input type="text" name="foodItems" id="food"> 
+                    ingredients:
+                    <input type="text" name="foodItems" id="food"> 
                 </label>
-                <button type="submit">Add here</button>
                 <label">
-                    quantity:<input type="number" name="measurements" id="units" >
+                    quantity:
+                    <input type="number" name="amount" id="units" >
                 </label>
-                <button type="submit">Add here</button>
-                <select name="measurements" id="servings">
-                    <option value="cups">cups</option>
-                    <option value="grams">grams</option>
+                <label>
+                    measurements:
+                    <select name="measurements" id="servings">
+                    <option value="cups">Cups</option>
+                    <option value="grams">Grams</option>
+                    <option value="ml">Milliliters</option>
+                    <option value="tsp">Teaspoons</option>
+                    <option value="tbsp">Tablespoon</option>
                 </select>
+            </label>
+            <button id='adding' type="submit">add ingredients</button>
             </form>
+            <div class="listOfIngredients">
+                <ul id="listOfIngredients"></ul>
+                <button id="remove">discard last item</button>
+            </div>
+            </div>
 
             </select>
         </section>
