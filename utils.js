@@ -3,3 +3,9 @@ export function renderIngredient(list) {
     item.textContent = `${list.ingredients} - ${list.measurements} - ${list.quantity}`;
     return item;
 }
+
+export function renderMeal(meal){
+    const li = document.createElement('li');
+    li.textContent = `${meal.name}: ${meal.ingredients} ingredients`;
+    return li;
+}
