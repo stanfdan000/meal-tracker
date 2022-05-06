@@ -54,10 +54,12 @@ discard.addEventListener('click', () => {
 save.addEventListener('click', () => {
     let meal = {
         ingredientsCount: howToArr.length,
-        name: mealsOnWheels.value, foodItems,
+        name: mealsOnWheels.value, 
+        //ingredients:foodItems
         
 
     };
+    console.log(foodItems);
     meals.push(meal);
     displayMeals();
     resetIngredient();
@@ -68,6 +70,7 @@ function displayMeals(){
     for (let meal of meals){
         const li = renderMeal(meal);
         mealList.append(li);
+        
     }
 }
 
